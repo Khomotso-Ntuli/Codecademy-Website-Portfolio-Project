@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Project</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,9 +16,11 @@
                 <ul>
                     <li id="home_button"><a href="#home" aria-label="Go to Home">Home</a></li>
                     <span class="nav-right">
-                        <li><a href="#email" aria-label="Get in touch with Email">Email</a></li>
-                        <li><a href="#resume" aria-label="View Resume">Skills</a></li>
-                        <li><a href="#projects" aria-label="View Projects">Projects</a></li>
+                        <li><a href="mailto:info@khomotso.com" aria-label="Get in touch with Email">Email</a></li>
+                        <li><a class="scroll-button3" data-target="skills-section" href="#skills-section"
+                                aria-label="View Skills">Skills</a></li>
+                        <li><a class="scroll-button4" data-target="projects-section" href="#projects-section"
+                                aria-label="View Projects">Projects</a></li>
                     </span>
                 </ul>
             </nav>
@@ -29,16 +31,18 @@
                     <h1>I'm Khomotso, a product designer based in South Africa, crafting thoughtful and creative
                         solutions
                         from 0 to 1.</h1>
-                    <button class="blue_button" aria-label="Send us an email">Email</button>
-                    <button class="other_button" aria-label="Get in touch with LinkedIn">Skills</button>
-                    <button class="other_button" aria-label="View Resume">Projects</button>
+                    <a href="mailto:info@khomotso.com" class="blue_button" aria-label="Send us an email">Email</button></a>
+                    <button class="other_button scroll-button2" data-target="skills-section"
+                        aria-label="Get in touch with LinkedIn">Skills</button>
+                    <button class="other_button scroll-button1" data-target="projects-section"
+                        aria-label="View Projects">Projects</button>
 
                 </div>
                 <div class="hero-image">
                     <img src="./Images/sport-landing-page-template/3099429.jpg" alt="image of a mobile app I designed">
                 </div>
             </section>
-            <section class="case-studies">
+            <section class="case-studies" id="projects-section">
                 <h1>Case studies</h1>
                 <div class="case-study-grid">
                     <div class="item case-image"><img src="./Images/travel-with-best-services-mobile-app/3604075.jpg"
@@ -55,7 +59,7 @@
                     </div>
                 </div>
             </section>
-            <section class="skillsets">
+            <section class="skillsets" id="skills-section">
                 <h1>Skills</h1>
                 <div class="skillset_wrapper">
                     <div class="container_left">

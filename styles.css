@@ -73,6 +73,11 @@ nav a {
     color: #181818;
 }
 
+div a {
+    text-decoration: none;
+    color: white;
+}
+
 nav a:hover {
     color: gray;
 }
