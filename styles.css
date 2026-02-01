@@ -73,12 +73,6 @@ nav a {
     color: #181818;
 }
 
-/*div a {
-    text-decoration: none;
-    color: white;
-}
-*/
-
 nav a:hover {
     color: gray;
 }
@@ -209,8 +203,8 @@ div>h4 {
     /*border: 2px solid orange;*/
     position: relative;
     width: 100%;
-    height: 300px;
-    margin-top: 4rem;
+    height: 400px;
+    margin-top: 6rem;
 }
 
 .container_left {
